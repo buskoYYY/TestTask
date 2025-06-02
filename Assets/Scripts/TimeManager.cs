@@ -2,27 +2,29 @@ using System.Collections;
 using UnityEngine;
 using System;
 
-
 public class TimeManager : MonoBehaviour
 {
-    private DateTime currentTime;
+    private const int TIME_UNIT = 1;
 
-    public void SetServerTime(DateTime serverTime)
+    private DateTime _currentTime;
+
+    public event Action<DateTime> OnTimeSet;
+
+    public void SetTime(DateTime serverTime)
     {
-        currentTime = serverTime;
-        StartCoroutine(UpdateTime());
+        _currentTime = serverTime;
+        StartCoroutine(IncrementTime());
     }
 
-    private IEnumerator UpdateTime()
+    private IEnumerator IncrementTime()
     {
         while (true)
         {
-            currentTime = currentTime.AddSeconds(1);
-            DateTime date = currentTime.Date;
-            TimeSpan time = currentTime.TimeOfDay;
-            Debug.Log("Текущее дата: " + date.ToString("yyyy-MM-dd"));
-            Debug.Log("Текущее время: " + time.ToString(@"hh\:mm\:ss"));
-            yield return new WaitForSeconds(1);
+            _currentTime = _currentTime.AddSeconds(TIME_UNIT);
+            DateTime time = _currentTime;
+            OnTimeSet?.Invoke(_currentTime);
+
+            yield return new WaitForSeconds(TIME_UNIT);
         }
     }
 }

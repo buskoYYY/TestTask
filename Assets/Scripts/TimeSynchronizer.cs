@@ -3,13 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-[Serializable]
-public class TimeResponse
-{
-    public long time;
-}
-
-public class TimeFetcher : MonoBehaviour
+public class TimeSynchronizer : MonoBehaviour
 {
     private const string url = "https://yandex.com/time/sync.json";
 
@@ -26,18 +20,22 @@ public class TimeFetcher : MonoBehaviour
         {
             yield return request.SendWebRequest();
 
-            if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+            if (request.result != UnityWebRequest.Result.Success)
             {
                 Debug.LogError("Error: " + request.error);
+                yield break; // Прерываем выполнение в случае ошибки
             }
-            else
+            try
             {
                 string jsonResponse = request.downloadHandler.text;
-                TimeResponse timeResponse = JsonUtility.FromJson<TimeResponse>(jsonResponse);
+                ServerData timeResponse = JsonUtility.FromJson<ServerData>(jsonResponse);
                 DateTime dateTime = DateTimeOffset.FromUnixTimeMilliseconds(timeResponse.time).UtcDateTime;
                 DateTime localDateTime = TimeZoneInfo.ConvertTimeFromUtc(dateTime, TimeZoneInfo.Local);
-                Debug.Log("Local Time: " + localDateTime);
-                OnTimeFetched?.Invoke(localDateTime); 
+                OnTimeFetched?.Invoke(localDateTime);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("JSON Parsing Error: " + ex.Message);
             }
         }
     }
