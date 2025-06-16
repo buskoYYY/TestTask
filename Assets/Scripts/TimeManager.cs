@@ -5,19 +5,24 @@ using System;
 public class TimeManager : MonoBehaviour
 {
     private const int TIME_UNIT = 1;
+
     private DateTime _currentTime;
     private Coroutine _incrementTimeCoroutine;
+
     public event Action<DateTime> OnTimeSet;
+
     public void SetTime(DateTime serverTime)
     {
         _currentTime = serverTime;
-        // ќстанавливаем корутину, если она уже запущена
+
         if (_incrementTimeCoroutine != null)
         {
             StopCoroutine(_incrementTimeCoroutine);
         }
+
         _incrementTimeCoroutine = StartCoroutine(IncrementTime());
     }
+
     private IEnumerator IncrementTime()
     {
         while (true)

@@ -5,8 +5,11 @@ using UnityEngine;
 public class DigitalClock : MonoBehaviour
 {
     [SerializeField] TimeManager _timeManager;
-    [SerializeField] TextMeshProUGUI _dateText;
-    [SerializeField] TextMeshProUGUI _timeText;
+    [SerializeField] TextMeshProUGUI _hourText;
+    [SerializeField] TextMeshProUGUI _minuteText;
+    [SerializeField] TextMeshProUGUI _dayText;
+    [SerializeField] TextMeshProUGUI _monthText;
+    [SerializeField] TextMeshProUGUI _yearText;
 
     private DateTime _time;
 
@@ -22,8 +25,11 @@ public class DigitalClock : MonoBehaviour
 
     private void Update()
     {
-        _dateText.text = _time.Date.ToString("yyyy-MM-dd");
-        _timeText.text = _time.ToString(@"hh\:mm\:ss");
+        _hourText.text = _time.Hour.ToString();
+        _minuteText.text = _time.Minute.ToString();
+        _dayText.text = _time.Day.ToString();
+        _monthText.text = _time.Month.ToString();
+        _yearText.text = _time.Year.ToString();
     }
 
     private void OnTimeSetHandler(DateTime time)
