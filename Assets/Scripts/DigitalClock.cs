@@ -1,10 +1,11 @@
 using System;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class DigitalClock : MonoBehaviour
 {
-    [SerializeField] TimeManager _timeManager;
+    [Inject] TimeManager _timeManager;
     [SerializeField] TextMeshProUGUI _hourText;
     [SerializeField] TextMeshProUGUI _minuteText;
     [SerializeField] TextMeshProUGUI _dayText;

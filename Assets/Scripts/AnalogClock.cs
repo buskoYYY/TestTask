@@ -1,6 +1,6 @@
-
 using System;
 using UnityEngine;
+using Zenject;
 
 public class AnalogClock : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class AnalogClock : MonoBehaviour
     private const int MINUTE_ANGLE = 6;
     private const int SECOND_ANGLE = 6;
 
-    [SerializeField] private TimeManager _timeManager;
+    [Inject] private TimeManager _timeManager;
     [SerializeField] private Transform _hourHand;
     [SerializeField] private Transform _minuteHand;
     [SerializeField] private Transform _secondHand;

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Zenject;
 
 public class TimeDisplayController : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class TimeDisplayController : MonoBehaviour
 
     private void OnTimeFetchedHandler(DateTime localTime)
     {
-        if (!_manualTimeSetter.IsManualTimeSet) // Проверяем, установлено ли ручное время
+        if (!_manualTimeSetter.IsManualTimeSet) 
         {
             _timeManager.SetTime(localTime);
         }
@@ -29,7 +30,6 @@ public class TimeDisplayController : MonoBehaviour
 
     private void OnManualTimeSet(DateTime manualTime)
     {
-        _timeManager.SetTime(manualTime); // Устанавливаем время вручную
+        _timeManager.SetTime(manualTime); 
     }
 }
-

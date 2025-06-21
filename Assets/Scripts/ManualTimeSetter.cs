@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using Zenject;
 
 public class ManualTimeSetter : MonoBehaviour
 {
@@ -19,8 +20,8 @@ public class ManualTimeSetter : MonoBehaviour
 
     public bool IsManualTimeSet { get { return _isManualTimeSet; } }
 
-
-    private void Start()
+    [Inject]
+    public void Initialize()
     {
         _setTimeButton.onClick.AddListener(OnSetTimeClicked);
     }
@@ -68,13 +69,10 @@ public class ManualTimeSetter : MonoBehaviour
             return;
         }
 
-
-
         _currentTime = new DateTime(year, month, day, hour, minute, 0);
 
         _isManualTimeSet = true;
 
         SetCurrentTimeCallback?.Invoke(_currentTime);
     }
-
 }
