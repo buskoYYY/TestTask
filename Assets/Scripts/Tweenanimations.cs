@@ -1,5 +1,4 @@
-/*using DG.Tweening;
-using TMPro;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,27 +13,22 @@ public class TweenAniamations : MonoBehaviour
     [SerializeField] private float _punchDuration = 0.8f;
     [SerializeField] private int _vibrato;
     [SerializeField] private float _elacity;
+    [SerializeField] private float _totalDuration;
 
-    private void OnEnable()
+    public float PunchDuration { get { return _punchDuration; } private set { } }
+
+    public void Show(CanvasGroup canvasGroup)
     {
-        _enemy.EnemyDied += PunchScale;
-    }
-    private void OnDisable()
-    {
-        _enemy.EnemyDied -= PunchScale;
-    }
-    public void Show(CanvasGroup _canvasGroup)
-    {
-        _canvasGroup.DOFade(_alphaWhenOn, _duration).SetUpdate(true);
+        canvasGroup.DOFade(_alphaWhenOn, _duration).SetUpdate(true);
     }
 
-    public void Hide(CanvasGroup _canvasGroup)
+    public void Hide(CanvasGroup canvasGroup)
     {
-        _canvasGroup.DOFade(_alphaWhenOff, _duration);
+        canvasGroup.DOFade(_alphaWhenOff, _duration);
     }
 
-    private void PunchScale()
+    public void PunchScale(Image image)
     {
-        _target.gameObject.transform.DOPunchScale(_punch, _punchDuration, _vibrato, _elacity);
+        image.transform.DOPunchScale(_punch, _punchDuration, _vibrato, _elacity);
     }
-}*/
+}
