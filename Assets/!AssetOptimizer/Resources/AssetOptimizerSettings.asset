@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2250a261ee41f774499394a4683a4b4a, type: 3}
+  m_Name: AssetOptimizerSettings
+  m_EditorClassIdentifier: 
+  ForceToMono: 0
+  LoadInBackground: 1
+  Ambisonic: 0
+  PreloadAudioData: 0
+  LoadType: 0
+  CompressionFormat: 1
+  SampleRateSetting: 0
+  CompressionFormatInt: 1
+  Quality: 0.01
+  AudioExtensions: -1
+  OverrideForceToMono: 0
+  OverrideLoadInBackground: 1
+  OverrideAmbisonic: 0
+  OverridePreloadAudioData: 0
+  OverrideLoadType: 1
+  OverrideCompressionFormat: 1
+  OverrideSampleRateSetting: 0
+  OverrideQuality: 1
+  OverrideGPUInstancing: 1
+  EnableGPUInstancing: 0
+  MeshCompression: 2
+  OverrideMeshCompression: 1
+  GenerateMipMaps: 0
+  MaxSize: 1024
+  MaxSizeInt: 5
+  ResizeAlgorithm: 0
+  Format: -1
+  Compression: 1
+  CompressionInt: 2
+  UseCrunchCompression: 1
+  CompressorQuality: 50
+  DisableOverrideForPlatforms: 0
+  Platforms: -1
+  ResizeTextures: 1
+  SkipIfReadWrite: 1
+  TextureExtensions: -1
+  ExcludeFoldersList:
+  - WebGLTemplates
+  ExcludeFolders: 1
+  IncludeFoldersList: []
+  IncludeFolders: 0
+  TextureImporterType: -1
+  OverrideGenerateMipMaps: 1
+  OverrideMaxSize: 0
+  OverrideResizeAlgorithm: 0
+  OverrideFormat: 0
+  OverrideCompression: 1
+  OverrideUseCrunchCompression: 1
+  OverrideCompressorQuality: 1

@@ -1,0 +1,171 @@
+Audio optimization started at 24.06.2025 19:34:08
+---------------------------------------
+Assets\Audio\DangerSound.mp3
+Assets\Audio\Huey_Lewis_and_The_News_-_The_Power_Of_Love_Instrumental_70875531.mp3
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Sounds\The Space (Looping Middle).mp3
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Sounds\NearExplosionA.ogg
+Assets\Audio\car-engine-sfx.wav
+Assets\Plugins\Zenject\OptionalExtras\SampleGame2 (Advanced)\Media\Sounds\damage.wav
+Assets\Plugins\Zenject\OptionalExtras\SampleGame2 (Advanced)\Media\Sounds\laser.wav
+Assets\Plugins\Zenject\OptionalExtras\SampleGame2 (Advanced)\Media\Sounds\laser2.wav
+---------------------------------------
+Audio optimization finished at 24.06.2025 19:34:26
+8 files has been optimized.
+
+
+Models optimization started at 24.06.2025 19:34:26
+---------------------------------------
+Assets\JMO Assets\WarFX\Mesh\CirclePlane12v.FBX
+Assets\JMO Assets\WarFX\Mesh\icosphere.fbx
+Assets\JMO Assets\WarFX\Mesh\Plane1x1.FBX
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_M4.fbx
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Meshes\ship.fbx
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Meshes\shipfractured.fbx
+Assets\Plugins\Zenject\OptionalExtras\SampleGame2 (Advanced)\Media\Models\ship.fbx
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Space_Shooter.fbx
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Rocks\meshes\rock_01.fbx
+---------------------------------------
+Models optimization finished at 24.06.2025 19:34:27
+9 files has been optimized.
+
+
+Textures optimization started at 24.06.2025 19:34:29
+---------------------------------------
+Assets\Textures\Background.jpg
+(690, 267) | (692, 268) Assets\Textures\TimePanel.jpg
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_M4 Normal.jpg
+Assets\Plugins\Demigiant\DOTween\Editor\Imgs\Header.jpg
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Textures\stars.jpg
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Rocks\textures\normal.jpg
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Space_Shooter.fbm\1K_Body-NM.jpg
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Space_Shooter.fbm\1K_Body-TXTR.jpg
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Space_Shooter.fbm\1K_Spec.jpg
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Textures\1K_Body-NM.jpg
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Textures\1K_Body-TXTR.jpg
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Textures\1K_Spec.jpg
+Assets\Textures\Clock.png
+(140, 767) | (140, 768) Assets\Textures\ClockHand.png
+(205, 500) | (208, 500) Assets\Textures\DocEmmit.png
+(600, 401) | (600, 404) Assets\Textures\Remote.png
+(2400, 1740) | (2400, 1739) Assets\Textures\SpeechBubble.png
+(3280, 2400) | (3280, 2402) Assets\Textures\Start.png
+(735, 668) | (736, 668) Assets\Textures\Warning.png
+Assets\TextMesh Pro\Sprites\EmojiOne.png
+Assets\JMO Assets\WarFX\Demo\UI Canvas\CFX Demo Btn Arrow R.png
+Assets\JMO Assets\WarFX\Demo\UI Canvas\CFX Demo Btn Arrow.png
+Assets\JMO Assets\WarFX\Demo\UI Canvas\CFX Demo Btn Camera H.png
+Assets\JMO Assets\WarFX\Demo\UI Canvas\CFX Demo Btn Camera.png
+Assets\JMO Assets\WarFX\Demo\UI Canvas\CFX Demo Btn Ground H.png
+Assets\JMO Assets\WarFX\Demo\UI Canvas\CFX Demo Btn Ground.png
+Assets\JMO Assets\WarFX\Demo\UI Canvas\CFX Demo Btn SlowMo H.png
+Assets\JMO Assets\WarFX\Demo\UI Canvas\CFX Demo Btn SlowMo.png
+(338, 45) | (340, 48) Assets\JMO Assets\WarFX\Demo\UI Canvas\WFX Demo Logo.png
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_GlowCircle A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_GlowPalet A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_SmallDots A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_SmallDots Inversed A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_Sparks Metal A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_StretchPalet A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF FrontRear RIFLE1 A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF FrontRear RIFLE2 A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF FrontRear RIFLE3 A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF Side RIFLE1 A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF Side RIFLE2 A8.png
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF Side RIFLE3 A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_GlowCircle A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_GlowPalet A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_SmallDots A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_SmallDots Inversed A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_Sparks Metal A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_StretchPalet A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF FrontRear RIFLE1 A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF FrontRear RIFLE2 A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF FrontRear RIFLE3 A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF Side RIFLE1 A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF Side RIFLE2 A8.png
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF Side RIFLE3 A8.png
+(93, 18) | (96, 20) Assets\Plugins\Demigiant\DOTween\Editor\Imgs\DOTweenIcon.png
+(9, 9) | (12, 12) Assets\Plugins\Demigiant\DOTween\Editor\Imgs\DOTweenMiniIcon.png
+(194, 24) | (196, 24) Assets\Plugins\Demigiant\DOTween\Editor\Imgs\Footer.png
+(194, 24) | (196, 24) Assets\Plugins\Demigiant\DOTween\Editor\Imgs\Footer_dark.png
+(14, 14) | (16, 16) Assets\Plugins\Zenject\OptionalExtras\MemoryPoolMonitor\Editor\TriangleDown.png
+(14, 14) | (16, 16) Assets\Plugins\Zenject\OptionalExtras\MemoryPoolMonitor\Editor\TriangleUp.png
+(160, 190) | (160, 192) Assets\Plugins\Zenject\OptionalExtras\IntegrationTests\Resources\TestFromResource\TestTexture.png
+(160, 190) | (160, 192) Assets\Plugins\Zenject\OptionalExtras\IntegrationTests\Resources\TestFromResource\TestTexture2.png
+(10, 10) | (12, 12) Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Textures\asteroid.png
+(5, 5) | (8, 8) Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Textures\ship.png
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Textures\target.png
+(600, 451) | (600, 452) Assets\Plugins\Zenject\OptionalExtras\SampleGame2 (Advanced)\Media\Textures\Free_Shmup_Sprites_Starfield.png
+(160, 190) | (160, 192) Assets\Plugins\Zenject\OptionalExtras\IntegrationTests\Factories\Resources\TestBindFactory\TestTexture.png
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Textures\fire.png
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Textures\fire2.png
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Textures\Glow.png
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Textures\Spark.png
+(600, 451) | (600, 452) Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Textures\Background\Free_Shmup_Sprites_Starfield.png
+Assets\Plugins\Zenject\OptionalExtras\SampleGame2 (Advanced)\Media\Textures\Flame.psd
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Textures\CampfireLeft.psd
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Textures\Campfireright.psd
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Textures\Candle.psd
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Textures\SmokeB.psd
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_Checker.tga
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_Cobblestone Normal.tga
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_Cobblestone.tga
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_M4.tga
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_Metal Normal.tga
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_Metal.tga
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_Wood Normal.tga
+Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_T_Wood.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Bullet Holes\WFX_T_BulletHoles Concrete.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Bullet Holes\WFX_T_BulletHoles Generic.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Bullet Holes\WFX_T_BulletHoles Metal.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Bullet Holes\WFX_T_BulletHoles Wood.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_DoubleFlames A8.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_FlameMine A8.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_FlamesBig A8.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_FlamesBig.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_FlamesSmall 4frm.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_FlamesSmallLoopAlpha.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_FlameThrower Stream.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_NukeFlames.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Flames\WFX_T_StarFlames A8.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_Debris Generic.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_Debris Wood.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Misc\WFX_T_GroundGlow A8.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF Sparks RIFLE1 A8.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF Sparks RIFLE2 A8.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\MuzzleFlashes\WFX_T_MF Sparks RIFLE3 A8.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Smoke\WFX_T_SmokeLoopAlpha Average.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Smoke\WFX_T_SmokeLoopAlpha.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Smoke\WFX_T_SmokeNoise.tga
+Assets\JMO Assets\WarFX\Desktop\Textures\Smoke\WFX_T_SmokeSpikeStretched A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Bullet Holes\WFXM_T_BulletHoles Concrete.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Bullet Holes\WFXM_T_BulletHoles Generic.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Bullet Holes\WFXM_T_BulletHoles Metal.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Bullet Holes\WFXM_T_BulletHoles Wood.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_DoubleFlames A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_FlameMine A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_FlamesBig A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_FlamesBig.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_FlamesSmall 4frm.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_FlamesSmallLoopAlpha.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_FlameThrower Stream.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_NukeFlames.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Flames\WFXM_T_StarFlames A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_Debris Generic.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_Debris Wood.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Misc\WFXM_T_GroundGlow A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF Sparks RIFLE1 A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF Sparks RIFLE2 A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\MuzzleFlashes\WFXM_T_MF Sparks RIFLE3 A8.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Smoke\WFXM_T_SmokeLoopAlpha Average.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Smoke\WFXM_T_SmokeLoopAlpha.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Smoke\WFXM_T_SmokeNoise.tga
+Assets\JMO Assets\WarFX\Mobile\Textures\Smoke\WFXM_T_SmokeSpikeStretched A8.tga
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\Rocks\textures\diffuse.tga
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Textures\1K_TXTR+Spec.tif
+Assets\Plugins\Zenject\OptionalExtras\SampleGame1 (Beginner)\Media\Imported\SpaceShip\Textures\512_TXTR+Spec.tif
+---------------------------------------
+Textures optimization finished at 24.06.2025 19:35:10
+133 files has been optimized.
+
+
