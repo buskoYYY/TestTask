@@ -28,15 +28,6 @@ public class ManualTimeSetter : MonoBehaviour
         _setTimeButton.onClick.AddListener(OnSetTimeClicked);
     }
 
-    /*    public void SetCurrentTime(DateTime time)
-        {
-            if (_isManualTimeSet)
-            {
-                _currentTime = time;
-                Debug.Log("Current Time: " + _currentTime);
-            }
-        }*/
-
     private void OnSetTimeClicked()
     {
         int hour, minute, day, month, year;
@@ -88,7 +79,6 @@ public class ManualTimeSetter : MonoBehaviour
         }
 
         _isManualTimeSet = true;
-
         SetCurrentTimeCallback?.Invoke(_currentTime);
     }
 }
