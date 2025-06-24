@@ -19,11 +19,11 @@ public class SceneLoader : MonoBehaviour
         {
             if (obj.Status == AsyncOperationStatus.Succeeded)
             {
-                Debug.Log("—цена успешно загружена.");
+                Debug.Log("The scene has been uploaded successfully.");
             }
             else
             {
-                Debug.LogError("ќшибка загрузки сцены.");
+                Debug.LogError("Scene loading error.");
             }
         }
     }

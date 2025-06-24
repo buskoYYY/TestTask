@@ -17,11 +17,11 @@ public class AddressablesInitilizer : MonoBehaviour
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
                 _loader.LoadScene();
-                Debug.Log("Addressables успешно инициализированы.");
+                Debug.Log("Addressables successfully initialized.");
             }
             else
             {
-                Debug.LogError("Ошибка инициализации Addressables.");
+                Debug.LogError("Addressables initialization error.");
             }
         };
     }
