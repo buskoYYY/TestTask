@@ -2,9 +2,7 @@
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="AnalogClock" preserve="all" />
     <type fullname="AudioManager" preserve="all" />
-    <type fullname="CFX_AutoDestructShuriken" preserve="all" />
     <type fullname="DigitalClock" preserve="all" />
-    <type fullname="Effects" preserve="all" />
     <type fullname="ManualTimeSetter" preserve="all" />
     <type fullname="ManualTimeSetterInstaller" preserve="all" />
     <type fullname="TimeDisplayController" preserve="all" />
@@ -67,10 +65,6 @@
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
-  </assembly>
-  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
-    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.BoxCollider" preserve="all" />

@@ -230,37 +230,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
---- !u!1 &120341907
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 120341908}
-  m_Layer: 0
-  m_Name: FlameEffectPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &120341908
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120341907}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 579900641}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &221869720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,53 +1619,6 @@ Transform:
   - {fileID: 1627719355}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &579900639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 579900641}
-  - component: {fileID: 579900640}
-  m_Layer: 0
-  m_Name: Effects
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &579900640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579900639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8746661df7b67984aa04a9c54b684536, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _flameEffect: {fileID: 19800002, guid: e3b931080c9262e408c0378d77443cb7, type: 3}
-  _point: {fileID: 120341908}
---- !u!4 &579900641
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579900639}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 120341908}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622331656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,7 +1813,6 @@ MonoBehaviour:
   _timeSynchronizer: {fileID: 2034081451}
   _manualTimeSetter: {fileID: 1627719356}
   _timeManager: {fileID: 675674511}
-  _flameeEffect: {fileID: 579900640}
   _audioManager: {fileID: 1729959277}
 --- !u!1 &684414756
 GameObject:
@@ -3867,7 +3788,7 @@ MonoBehaviour:
   _dayInput: {fileID: 1830206604}
   _monthInput: {fileID: 1957771846}
   _yearInput: {fileID: 1750502579}
-  _effect: {fileID: 579900640}
+  _effect: {fileID: 0}
   _setTimeButton: {fileID: 322600448}
 --- !u!1 &1661351255
 GameObject:
@@ -5649,6 +5570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b0595f80a58fc44b0037baf474cdfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxRetries: 3
+  _waitBeforeRetrying: 2
 --- !u!4 &2034081452
 Transform:
   m_ObjectHideFlags: 0
@@ -6686,5 +6609,4 @@ SceneRoots:
   - {fileID: 1833264923}
   - {fileID: 571422328}
   - {fileID: 985710207}
-  - {fileID: 579900641}
   - {fileID: 1729959278}

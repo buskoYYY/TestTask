@@ -6,6 +6,9 @@ using System.Collections;
 public class TimeSynchronizer : MonoBehaviour
 {
     private const string url = "https://yandex.com/time/sync.json";
+    
+    [SerializeField] int maxRetries = 3;
+    [SerializeField] private float _waitBeforeRetrying = 2;
 
     private bool _isManualTimeSet = false;
 
@@ -28,30 +31,35 @@ public class TimeSynchronizer : MonoBehaviour
             yield break;
         }
 
-        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        for (int attempt = 0; attempt < maxRetries; attempt++)
         {
-            yield return request.SendWebRequest();
-
-            if (request.result != UnityWebRequest.Result.Success)
+            using (UnityWebRequest request = UnityWebRequest.Get(url))
             {
-                Debug.LogError("Error: " + request.error);
+                yield return request.SendWebRequest();
 
-                yield break;
-            }
+                if (request.result != UnityWebRequest.Result.Success)
+                {
+                    Debug.LogError("Error: " + request.error);
+                    if (attempt + 1 >= maxRetries) yield break; 
+                    yield return new WaitForSeconds(_waitBeforeRetrying); 
+                    continue;
+                }
 
-            try
-            {
-                string jsonResponse = request.downloadHandler.text;
+                try
+                {
+                    string jsonResponse = request.downloadHandler.text;
 
-                ServerData timeResponse = JsonUtility.FromJson<ServerData>(jsonResponse);
-                DateTime dateTime = DateTimeOffset.FromUnixTimeMilliseconds(timeResponse.time).UtcDateTime;
-                DateTime localDateTime = TimeZoneInfo.ConvertTimeFromUtc(dateTime, TimeZoneInfo.Local);
+                    ServerData timeResponse = JsonUtility.FromJson<ServerData>(jsonResponse);
+                    DateTime dateTime = DateTimeOffset.FromUnixTimeMilliseconds(timeResponse.time).UtcDateTime;
+                    DateTime localDateTime = TimeZoneInfo.ConvertTimeFromUtc(dateTime, TimeZoneInfo.Local);
 
-                OnTimeFetched?.Invoke(localDateTime);
-            }
-            catch (Exception ex)
-            {
-                Debug.LogError("JSON Parsing Error: " + ex.Message);
+                    OnTimeFetched?.Invoke(localDateTime);
+                    yield break; 
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogError("JSON Parsing Error: " + ex.Message);
+                }
             }
         }
     }

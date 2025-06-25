@@ -6,7 +6,6 @@ public class TimeDisplayController : MonoBehaviour
     [SerializeField] private TimeSynchronizer _timeSynchronizer;
     [SerializeField] private ManualTimeSetter _manualTimeSetter;
     [SerializeField] private TimeManager _timeManager;
-    [SerializeField] private Effects _flameeEffect;
     [SerializeField] private AudioManager _audioManager;
 
     private void OnEnable()
@@ -32,7 +31,6 @@ public class TimeDisplayController : MonoBehaviour
     private void OnManualTimeSet(DateTime manualTime)
     {
         _timeManager.SetTime(manualTime);
-        _flameeEffect.StartFlameEffect();
         _audioManager.PlayEngineSound();
     }
 }
