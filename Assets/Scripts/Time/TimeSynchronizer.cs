@@ -5,7 +5,7 @@ using System.Collections;
 
 public class TimeSynchronizer : MonoBehaviour
 {
-    private const string url = "https://yandex.com/time/sync.json";
+    private const string url = "https://timeapi.io/api/Time/current/zone?timeZone=UTC";
 
     [SerializeField] int maxRetries = 3;
     [SerializeField] private float _waitBeforeRetrying = 2;
@@ -39,8 +39,16 @@ public class TimeSynchronizer : MonoBehaviour
 
                 if (request.result != UnityWebRequest.Result.Success)
                 {
-                    Debug.LogError("Error: " + request.error);
-                    if (attempt + 1 >= maxRetries) yield break;
+                    Debug.LogError($"Attempt {attempt + 1}/{maxRetries}: Error: {request.error}");
+
+                    if (attempt + 1 >= maxRetries)
+                    {
+                        Debug.LogWarning("Failed to get time from server after all attempts. Using local time.");
+                        OnTimeFetched?.Invoke(DateTime.Now);
+
+                        yield break;
+                    }
+
                     yield return new WaitForSeconds(_waitBeforeRetrying);
                     continue;
                 }
@@ -48,17 +56,17 @@ public class TimeSynchronizer : MonoBehaviour
                 try
                 {
                     string jsonResponse = request.downloadHandler.text;
-
                     ServerData timeResponse = JsonUtility.FromJson<ServerData>(jsonResponse);
-                    DateTime dateTime = DateTimeOffset.FromUnixTimeMilliseconds(timeResponse.time).UtcDateTime;
+                    DateTime dateTime = DateTime.Parse(timeResponse.dateTime);
                     DateTime localDateTime = TimeZoneInfo.ConvertTimeFromUtc(dateTime, TimeZoneInfo.Local);
-
                     OnTimeFetched?.Invoke(localDateTime);
+
                     yield break;
                 }
                 catch (Exception ex)
                 {
                     Debug.LogError("JSON Parsing Error: " + ex.Message);
+                    Debug.LogError(ex.StackTrace);
                 }
             }
         }
